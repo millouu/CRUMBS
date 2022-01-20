@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_lab_lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="longitude: "
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lab_lat" />
+
+    <TextView
+        android:id="@+id/tv_lab_crumbsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="crumbs: "
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_newCrumb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lab_address"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_lab_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="address: "
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lab_speed" />
+
+    <TextView
+        android:id="@+id/tv_lab_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="speed: "
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lab_altitude" />
+
+    <TextView
+        android:id="@+id/tv_lab_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="altitude: "
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lab_lon" />
+
+    <TextView
+        android:id="@+id/tv_lab_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="latitude: "
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="130sp"
+        android:layout_height="46sp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/clootie"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="update"
+        android:textAllCaps="false"
+        android:textColor="@color/lightDark"
+        android:textSize="39sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_newCrumb"
+        android:layout_width="170sp"
+        android:layout_height="48sp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/clootie"
+        android:text="drop crumb"
+        android:textAllCaps="false"
+        android:textColor="@color/lightDark"
+        android:textSize="39sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
+
+    <Button
+        android:id="@+id/btn_mapCrumbs"
+        android:layout_width="170sp"
+        android:layout_height="48sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/clootie"
+        android:text="map crumb"
+        android:textAllCaps="false"
+        android:textColor="@color/lightDark"
+        android:textSize="39sp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_newCrumb"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/tv_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="0.00"
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toEndOf="@+id/tv_lab_lat"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update" />
+
+    <TextView
+        android:id="@+id/tv_lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="0.00"
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toEndOf="@+id/tv_lab_lon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lat" />
+
+    <TextView
+        android:id="@+id/tv_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="0.00"
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toEndOf="@+id/tv_lab_speed"
+        app:layout_constraintTop_toBottomOf="@+id/tv_speed" />
+
+    <TextView
+        android:id="@+id/tv_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="0.00"
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toEndOf="@+id/tv_lab_altitude"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lon" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="217dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/tv_lab_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_altitude" />
+
+    <TextView
+        android:id="@+id/tv_CrumbsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="0"
+        android:textColor="@color/darkbgText"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toEndOf="@+id/tv_lab_crumbsCount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
