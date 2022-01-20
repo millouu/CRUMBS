@@ -3,7 +3,7 @@ A silly location tracker. This is also my first android app 🐷
 
 # What is Crumbs?
 A silly location tracker ( ＾▽＾)っ  <br />
-In the old tales, bread crumbs were used to mark tracks, hence the name ¯\\_(ツ)_/¯ 
+In the old tales, bread crumbs were used to mark tracks, hence the name ¯\\\_(ツ)_/¯ 
 
 # How do I use Crumbs?
 It's stupid simple!  <br />
